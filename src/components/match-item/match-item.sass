@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')
+
+$padding: 3px 5px
+$radius: 3px
+
+.container
+  display: flex
+  font-family: 'Inter', sans-serif
+  font-weight: 200
+  font-size: 8pt
+  .leftSide
+    background-color: #929191
+    color: white
+    padding: $padding
+    border-radius: 0 0 0 $radius
+  .rightSide
+    background-color: gray
+    color: white
+    padding: $padding
+    border-radius: 0 0 $radius 0
+    width: 100px
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+  .hovered
+    background-color: black
+    cursor: move
+  &.top
+    .leftSide
+      border-radius: $radius 0 0 0
+      border-bottom: 1px solid #464646
+    .rightSide
+      border-radius: 0 $radius 0 0
+      border-bottom: 1px solid #464646
